@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+
+
+    <label>Name:</label>
+    <input type="text"><br><br>
+
+    <label>Email:</label>
+    <input type="email"><br><br>
+
+    <label>Mobile Number:</label>
+    <input type="tel"><br><br>
+
+    <label>Date of Birth:</label>
+    <input type="date"><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male"> Male<br>
+    <input type="radio" name="gender" value="Female"> Female<br><br>
+
+    <label>Select Course:</label>
+    <select required>
+        <option value="">Choose Course</option>
+        <option value="Python">Python</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Java">Java</option>
+    </select><br><br>
+
+    <label>Skills:</label><br>
+    <input type="checkbox" value="HTML"> HTML<br>
+    <input type="checkbox" value="CSS"> CSS<br>
+    <input type="checkbox" value="JavaScript"> JavaScript<br><br>
+
+    <label>Feedback:</label><br>
+    <textarea rows="4" cols="30"></textarea><br><br>
+
+    <button id="btn">Submit</button>
+
+    <script>
+        document.getElementById('btn').addEventListener('click',submitForm)
+        function submitForm() {
+            alert("Form submitted successfully!");
+        }
+    </script>
+
+</form>
+
+</body>
+</html>

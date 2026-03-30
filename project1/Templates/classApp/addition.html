@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            main{
+            height:12vh;
+            background-color:teal;
+            color:white;
+            text-align:center;
+            padding:10px;
+            }
+            header{
+                margin-top: 20px;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+         <main>
+            <h1>
+                Vcube application
+            </h1>
+        </main>
+        <header>
+            <form action="" method="post">
+                {% csrf_token %}
+                <label for="">
+                    Value1
+                    <input type="text" name="t1">
+
+                </label><br>
+                <br>
+                <label for="">
+                    Value 2
+                    <input type="text" name="t2">
+                </label>
+                <br>
+                <br>
+                <input type="submit" value="Calculate">
+            </form>
+            <p>{{result}}</p>
+        </header>
+    </body>
+</html>

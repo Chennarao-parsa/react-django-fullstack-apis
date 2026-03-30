@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+   
+</head>
+<body>
+    <header>
+        <h1>Vcube Application</h1>
+    </header>
+    <main>      
+      {% block main %}
+
+
+      {% endblock %}
+        
+    </main>
+    <script>
+        function validate(){
+          
+            let v1,v2;
+        v1=parseInt(document.querySelector('#t1').value)  
+        v2=parseInt(document.querySelector('#t2').value)
+        if(v1<0 || v2<0){
+            alert("Please enter valid positive numbers")
+            return false;
+        }
+        else{
+            return true;
+        }
+        }
+        </script>
+    </body>
+    </html>

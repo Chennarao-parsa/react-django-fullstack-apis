@@ -1,0 +1,13 @@
+.imagecounter{
+    position: absolute;
+    top:30vh;
+    left:40vw;
+
+
+}
+
+.imagecounter img{
+    height: 25vh;
+    width:20vw;
+
+}

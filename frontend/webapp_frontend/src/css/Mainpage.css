@@ -1,0 +1,24 @@
+.Mainpage button{
+    position: absolute;
+    top:15vh;
+    left:45vw;
+    height:8vh;
+    width:18vw;
+    background-color: red;
+    color:white;
+    font-size: x-large;
+    border: none;
+}
+/*
+.Mainpage .login{
+    position:absolute;
+    left:40vw;
+    top:20vh;
+    font-size: xx-large;
+
+}
+.Mainpage .login  input[type=text]{
+    width:20vw;
+    height:7vh;
+}
+    */

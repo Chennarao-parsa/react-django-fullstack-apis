@@ -1,0 +1,21 @@
+ *{
+     margin:0px;
+    padding:0px;
+        }
+        header{
+            height:12vh;
+            background-color:teal;
+            color:white;
+            text-align:center;
+            padding:10px;
+        }
+        main{
+            text-align:center;
+            padding-top:30px;
+
+        }
+        .profile-img{
+            width:100px;
+            height:20px;
+        }
+

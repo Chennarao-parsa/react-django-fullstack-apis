@@ -1,0 +1,28 @@
+{%extends 'base.html'%}
+{%block main %}
+
+
+
+<form action="" method="POST">
+    {% csrf_token %}
+    
+    <label>Value 1</label>
+    <input type="text" name="t1"><br><br>
+
+    <label>Value 2</label>
+    <input type="text" name="t2"><br><br>
+
+    <select name="operation">
+        <option value="add">Addition</option>
+        <option value="sub">Subtraction</option>
+        <option value="mul">Multiplication</option>
+        <option value="div">Division</option>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+    <p>Result: {{ result }}</p>
+{% endblock %}
+  

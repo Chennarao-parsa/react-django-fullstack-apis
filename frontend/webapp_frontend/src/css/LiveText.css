@@ -1,0 +1,19 @@
+
+.LiveText{
+    position:absolute;
+    top:20vh;
+    left:25vw;
+
+}
+.LiveText input[type=text] {
+    width:50vw;
+    height:8vh;
+    border:2px solid blue;
+    border-radius:10px;
+    font-size: xx-large;
+}
+.LiveText p{
+    text-align:center;
+    font-size:xx-large;
+    
+}

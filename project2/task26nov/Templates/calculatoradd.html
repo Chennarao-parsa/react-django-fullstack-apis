@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <header>
+                <h1>
+                    calculator addition
+                </h1>
+                
+
+                </header>
+                <main>
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                    <label for="num1">Enter first number:
+                    <input type="number" id="num1" name="num1">
+                    </label>
+                    <label for="num2">Enter second number:
+                    <input type="number" id="num2" name="num2">
+                    </label>
+                    <select id="operation" name="operation">
+                        <option value="add">Addition</option>
+                        <option value="sub">Subtraction</option>
+                        <option value="mul">Multiplication</option>            
+                        <option value="div">Division</option>
+                    </select>
+                    <button type="submit">
+                        Calculate
+                    </button>
+                    </form>
+               
+                        <h2>Result: {{ result }}</h2>
+                    
+
+                </main>
+            <footer>
+                        <p>Calculator App &copy; 2024</p>
+
+        </body>
+
+    </head>
+</html>

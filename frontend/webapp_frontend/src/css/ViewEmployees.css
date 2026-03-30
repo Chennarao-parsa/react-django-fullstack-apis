@@ -1,0 +1,20 @@
+
+.viewemployees {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.viewemployees .navigationbar{
+    text-align: center;
+}
+
+.viewemployees .navigationbar button {
+    width:20vw;
+    height:8vh;
+    margin:20px;
+    background-color:red ;
+    color: beige;
+    font-size: xx-large;
+
+
+}

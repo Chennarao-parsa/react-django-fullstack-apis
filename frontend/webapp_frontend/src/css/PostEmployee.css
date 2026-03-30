@@ -1,0 +1,29 @@
+.postemployee{
+    display: flex;
+    flex-direction: row;
+}
+.postemployee .left{
+    width:40vw;
+    height:60vh;
+    font-size:xx-large ;
+}
+.postemployee .right{
+    width: 40vw;
+    height: 60vh;
+    font-size: xx-large;
+}
+.postemployee input{
+    width:20vw;
+    height: 5vh;
+    font-size: x-large;
+}
+button{
+    width:8vw;
+    height:6vh;
+    background-color: red;
+    color:white;
+    font-size:xx-large;
+    border:none;
+    margin:20px;
+
+}

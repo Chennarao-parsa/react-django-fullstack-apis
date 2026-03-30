@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block main %}
+<form action="" method="POST">
+    {% csrf_token %}
+<label for="">
+    <p>employee number: {{ employee.empno }}</p>
+</label><br><br >
+<label for="">
+    employee name:
+    <input type="text" name="ename"  value="{{  employee.ename }}" >
+</label><br><br >
+<label for="">
+    employee salary:
+    <input type="text" name="salary"  value="{{  employee.salary }}" >  
+</label><br><br >
+<input type="submit" value="Update">
+</form>
+{% for message in messages %}
+    <p>{{ message }}</p>
+{% endfor %}
+{% endblock %}

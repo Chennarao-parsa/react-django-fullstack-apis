@@ -1,0 +1,24 @@
+<h2>All Students</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th><th>Name</th><th>Age</th><th>Course</th><th>update</th><th>del</th>
+    </tr>
+
+    {% for s in students %}
+    <tr>
+        <td>{{ s.id }}</td>
+        <td>{{ s.name }}</td>
+        <td>{{ s.age }}</td>
+        <td>{{ s.course }}</td>
+        <td>
+            <a href="{% url 'update_student' s.id %}">Edit</a> |
+            </td>
+            <td>
+            <a href="{% url 'delete_student' s.id %}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a href="{% url 'add_student' %}">Add New Student</a>

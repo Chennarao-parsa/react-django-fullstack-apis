@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: teal;
+    font-family: Arial, sans-serif;
+}
+.profile-img {
+    width: 40px;      /* adjust size */
+    height: 60px;
+    object-fit: cover; /* keeps aspect ratio */
+    border-radius: 5px;
+    border:1px solid blue;
+}
+
+
+
+/* Container */
+.header {
+    margin: 20px 10vw;
+    padding: 20px;
+    background-color: teal;
+    border: 1px solid blue;
+}
+
+/* Title */
+.header h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* FORM GRID */
+.header form {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+    align-items: center;
+}
+
+/* Labels */
+.header label {
+    font-weight: bold;
+    text-align: right;
+}
+.file-input{
+    width:600px;
+    height:300px;
+    margin-top:10px;
+    padding:5px;
+}
+
+/* Inputs & Select */
+.header input[type="text"],
+.header input[type="file"],
+.header select {
+    width: 200%;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/* Submit Button */
+.header input[type="submit"] {
+    grid-column: span 2;
+    justify-self: center;
+    padding: 8px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+

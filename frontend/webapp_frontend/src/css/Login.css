@@ -1,0 +1,18 @@
+ .login{
+    position:absolute;
+    left:40vw;
+    top:20vh;
+    font-size: xx-large;
+    
+
+}
+ .login  input[type=text]{
+    width:20vw;
+    height:7vh;
+    font-size: xx-large;
+}
+.login input[type=button]{
+    width:10vw;
+    height:7vh;
+}
+    

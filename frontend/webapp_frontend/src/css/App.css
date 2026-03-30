@@ -1,0 +1,44 @@
+   *{
+    margin:0px;
+    padding: 0px;
+}
+
+   .app{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar mainpage"
+    "footer footer";
+}
+
+.app .Header{
+    grid-area: header;
+    height:12vh;
+    text-align: center;
+    background-color: blue;
+    color:white;
+    font-size: x-large;
+}
+.app .SideBar{
+    grid-area:sidebar;
+    height:78vh;
+    background-color: burlywood;
+    font-size: x-large;
+}
+.app .SideBar ul li{
+    margin-top: 35px;
+    margin-left: 15px;
+}
+.app .Mainpage{
+    grid-area:mainpage;
+    height: 78vh;
+}
+.app .Footer{
+    grid-area:footer;
+    height:10vh;
+    background-color: lightcoral;
+    text-align: center;
+    font-size: xx-large;
+    color:white;
+}

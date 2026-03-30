@@ -1,0 +1,9 @@
+.firstcomponent{
+    height:40vh;
+    width:50vw;
+    border:1px solid blue;
+
+}
+.firstcomponent h1{
+    color:red;
+}

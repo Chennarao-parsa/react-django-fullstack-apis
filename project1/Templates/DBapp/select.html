@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees</title>
+
+    <style>
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .profile_video{
+            width:100px;
+            height:100px;
+
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: #ddd;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 style="text-align:center;">
+    <a href="{% url 'inserturl' %}">Add +</a>
+</h1>
+
+<table>
+    <tr>
+        <th>Employee Number</th>
+        <th>Employee Name</th>
+        <th>Employee Salary</th>
+        <th>Department</th>
+        <th>Profile</th>
+        <th>Video</th>
+        <th>Action</th>
+    </tr>
+
+    {% for emp in employees %}
+    <tr>
+        <td>{{ emp.empno }}</td>
+
+        <td>
+            <a href="{% url 'updateurl' emp.empno %}">
+                {{ emp.ename }}
+            </a>
+        </td>
+
+        <td>{{ emp.salary }}</td>
+        <td>{{ emp.dept.dname }}</td>
+
+        <!-- Employee Image -->
+        <td>
+            {% if emp.profile_pic %}
+                <img src="{{ emp.profile_pic.url }}" 
+                     class="profile-img" 
+                     alt="profile">
+            {% else %}
+                No Image
+            {% endif %}
+        </td>
+        <td>
+            {% if emp.video %}
+            <video src="{{emp.video.url}}"  autoplay  controls class="profile_video"></video>
+            {% endif %}
+
+        </td>
+        
+
+        <td>
+            <a href="{% url 'deleteurl' emp.empno %}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
